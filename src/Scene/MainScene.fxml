@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Scene.MainSceneController">
+   <children>
+      <ImageView blendMode="SRC_ATOP" fitHeight="861.0" fitWidth="1319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/主菜单背景图.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="48.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/主菜单按键素材2.png" />
+         </image>
+      </ImageView>
+      <ImageView cache="true" fitHeight="150.0" fitWidth="200.0" layoutX="48.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../../image/主菜单按键素材2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="48.0" layoutY="587.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/主菜单按键素材2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="802.0" layoutY="593.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/主菜单按键素材2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="80.0" layoutY="474.0" onMouseClicked="#toScore" prefHeight="41.0" prefWidth="118.0" text="积分榜单" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="610.0" onMouseClicked="#toHelp" prefHeight="41.0" prefWidth="118.0" text="帮助/设置" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="843.0" layoutY="616.0" onMouseClicked="#exit" prefHeight="41.0" prefWidth="118.0" text="退出" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="start" contentDisplay="BOTTOM" layoutX="80.0" layoutY="348.0" onMouseClicked="#toStart" prefHeight="41.0" prefWidth="118.0" text="开始游戏" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="264.0" fitWidth="379.0" layoutX="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/logo2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="notice" layoutX="652.0" layoutY="529.0" text="你可以点击右上角的X来关闭窗口" textFill="RED" visible="false">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

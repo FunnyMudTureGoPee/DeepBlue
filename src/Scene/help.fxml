@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Scene.HelpController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/help.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="316.0" layoutX="14.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/主菜单按键素材2.png" />
+         </image>
+      </ImageView>
+      <Label contentDisplay="CENTER" layoutX="67.0" layoutY="140.0" prefHeight="51.0" prefWidth="228.0" text="帮助" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="102.0" layoutX="969.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="228.0" layoutX="81.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/小框.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="109.0" layoutY="425.0" onMouseEntered="#display_story" onMouseExited="#disappear_story" prefHeight="51.0" prefWidth="228.0" text="游戏背景" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="124.0" fitWidth="228.0" layoutX="81.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/小框.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="109.0" layoutY="562.0" onMouseEntered="#display_ruler" onMouseExited="#disappear_ruler" prefHeight="51.0" prefWidth="228.0" text="游戏规则" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="back" layoutX="997.0" layoutY="118.0" onMouseClicked="#back" text="返回" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Pane fx:id="story" layoutX="372.0" layoutY="160.0" opacity="0.0" prefHeight="439.0" prefWidth="359.0">
+         <children>
+            <ImageView fitHeight="444.0" fitWidth="371.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/大框HUD.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="story1" contentDisplay="TOP" layoutX="51.0" layoutY="25.0" prefHeight="374.0" prefWidth="262.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="ruler" layoutX="295.0" layoutY="154.0" opacity="0.0" prefHeight="439.0" prefWidth="659.0">
+         <children>
+            <ImageView fitHeight="444.0" fitWidth="666.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../image/大框HUD.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="ruler1" contentDisplay="TOP" layoutX="79.0" layoutY="23.0" prefHeight="374.0" prefWidth="511.0" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="scene" prefHeight="718.0" prefWidth="1050.0" style="-fx-background-image: W:\javaApp\src\地月.jpg.png;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Scene.BattleSceneController">
+    <children>
+      <ImageView fitHeight="720.0" fitWidth="1080.0" layoutX="-3.0" layoutY="1.0" nodeOrientation="INHERIT" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../image/1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="197.0" fitWidth="398.0" layoutX="671.0" layoutY="518.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../image/界面.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="214.0" fitWidth="333.0" layoutX="738.0" layoutY="8.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../image/界面.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label4" layoutX="705.0" layoutY="547.0" text="船只信息：" textFill="#eb8500" />
+        <Label id="label" fx:id="label1" layoutX="26.0" layoutY="674.0" text="鼠标位置：" />
+      <Label fx:id="label2" layoutX="26.0" layoutY="703.0" text="中心坐标:" textFill="#b200ff" />
+      <Label fx:id="friendlyShip" alignment="TOP_CENTER" layoutX="487.0" layoutY="301.0" prefHeight="6.0" prefWidth="67.0" textFill="RED" translateX="-34.0" translateY="-39.0" />
+      <Label fx:id="label3" layoutX="14.0" layoutY="14.0" text="FPS" textFill="#ce00ff" />
+      <Label fx:id="enemyShip" layoutX="512.0" layoutY="61.0">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/ship2.png" />
+               </image>
+            </ImageView>
+         </graphic></Label>
+      <Label fx:id="label5" layoutX="775.0" layoutY="43.0" text="雷达锁定：" textFill="#00d1b8" />
+      <Label fx:id="missile" layoutX="941.0" layoutY="282.0" text="天外飞弹" />
+      <Label fx:id="enemyShip2" layoutX="176.0" layoutY="175.0" text="敌人2" />
+      <Label fx:id="enemyShip3" layoutX="247.0" layoutY="547.0" text="敌人三" />
+      <Line fx:id="line" endX="396.6666259765625" endY="156.33331298828125" layoutX="540.0" layoutY="361.0" stroke="#190086" />
+      <Line fx:id="attline" endX="0.0" layoutX="540.0" layoutY="360.0" opacity="0.5" stroke="#cc0000" />
+      <Line fx:id="pointline" endX="100.0" layoutX="388.0" layoutY="359.0" opacity="0.0" startX="148.0" startY="-49.0" stroke="#a100f0" />
+    </children>
+</AnchorPane>
